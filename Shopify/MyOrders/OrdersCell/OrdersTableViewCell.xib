@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ufonts.com_nevis-bold.ttf">
+            <string>nevis-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OrdersTableViewCell" rowHeight="150" id="FbN-xZ-6Ni" customClass="OrdersTableViewCell" customModule="Shopify" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="367" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FbN-xZ-6Ni" id="7hr-UQ-fKs">
+                <rect key="frame" x="0.0" y="0.0" width="367" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YcH-Ru-g1w">
+                        <rect key="frame" x="8" y="9.5" width="351" height="131.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="noV-vm-AUw">
+                                <rect key="frame" x="0.0" y="5" width="117" height="129"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="WUn-qu-uQ6">
+                                <rect key="frame" x="127" y="5" width="216" height="121.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="T-Shirt Polo" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H7A-DU-7kB">
+                                        <rect key="frame" x="0.0" y="0.0" width="216" height="19"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="216" id="LXb-uH-vtV"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="nevis-Bold" family="nevis" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="189 USD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NrR-Ce-4WO">
+                                        <rect key="frame" x="0.0" y="51" width="216" height="18"/>
+                                        <color key="tintColor" red="0.094089172779999994" green="0.62105113270000001" blue="0.64091527459999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="nevis-Bold" family="nevis" pointSize="16"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vv0-6y-bnh">
+                                        <rect key="frame" x="0.0" y="101" width="216" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Quantity:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jxe-Ae-eFt">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="tY8-Ad-xCS"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="nevis-Bold" family="nevis" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yeM-jv-jRT">
+                                                <rect key="frame" x="90" y="0.0" width="126" height="20.5"/>
+                                                <fontDescription key="fontDescription" name="nevis-Bold" family="nevis" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="yeM-jv-jRT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="jxe-Ae-eFt" secondAttribute="trailing" id="lXK-0S-J0q"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="WUn-qu-uQ6" secondAttribute="bottom" constant="5" id="LWA-Zx-4zg"/>
+                            <constraint firstItem="WUn-qu-uQ6" firstAttribute="top" secondItem="YcH-Ru-g1w" secondAttribute="top" constant="5" id="QCJ-Uu-HVr"/>
+                            <constraint firstAttribute="trailing" secondItem="WUn-qu-uQ6" secondAttribute="trailing" constant="8" id="cu4-fc-bhH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="YcH-Ru-g1w" firstAttribute="centerY" secondItem="7hr-UQ-fKs" secondAttribute="centerY" id="UF3-R3-01Z"/>
+                    <constraint firstItem="YcH-Ru-g1w" firstAttribute="leading" secondItem="7hr-UQ-fKs" secondAttribute="leading" constant="8" id="hlV-DG-Clr"/>
+                    <constraint firstItem="YcH-Ru-g1w" firstAttribute="centerX" secondItem="7hr-UQ-fKs" secondAttribute="centerX" id="tuw-Br-eep"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="0jP-Ol-tj2"/>
+            <connections>
+                <outlet property="imgView" destination="noV-vm-AUw" id="NAF-aa-x1o"/>
+                <outlet property="priceLabel" destination="NrR-Ce-4WO" id="5xt-Uh-p1c"/>
+                <outlet property="quantityLabel" destination="yeM-jv-jRT" id="4xd-D2-BiS"/>
+                <outlet property="quantityLbl" destination="jxe-Ae-eFt" id="5yp-iM-jH9"/>
+                <outlet property="titleLabel" destination="H7A-DU-7kB" id="fN6-TI-BFr"/>
+            </connections>
+            <point key="canvasLocation" x="187.68115942028987" y="88.392857142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="1" width="720" height="450"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

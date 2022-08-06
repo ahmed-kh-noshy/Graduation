@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AddressEntity" representedClassName="AddressEntity" syncable="YES">
+        <attribute name="addID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="city" optional="YES" attributeType="String"/>
+        <attribute name="country" optional="YES" attributeType="String"/>
+        <attribute name="customerID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="customerName" optional="YES" attributeType="String"/>
+        <attribute name="firstAddress" optional="YES" attributeType="String"/>
+        <attribute name="phoneNumber" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Favourite" representedClassName="Favourite" syncable="YES" codeGenerationType="class">
+        <attribute name="productDescription" optional="YES" attributeType="String"/>
+        <attribute name="productID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="productImage" optional="YES" attributeType="String"/>
+        <attribute name="productName" optional="YES" attributeType="String"/>
+        <attribute name="productPrice" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="OrdersInCart" representedClassName="OrdersInCart" syncable="YES">
+        <attribute name="itemID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="itemImage" optional="YES" attributeType="String"/>
+        <attribute name="itemName" optional="YES" attributeType="String"/>
+        <attribute name="itemPrice" optional="YES" attributeType="String"/>
+        <attribute name="itemQuantity" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="userID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <elements>
+        <element name="AddressEntity" positionX="-27" positionY="72" width="128" height="134"/>
+        <element name="Favourite" positionX="-54" positionY="-9" width="128" height="104"/>
+        <element name="OrdersInCart" positionX="-45" positionY="27" width="128" height="119"/>
+    </elements>
+</model>

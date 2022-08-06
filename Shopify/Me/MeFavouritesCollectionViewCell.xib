@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MeFavoritesCollectionViewCell" id="4IS-RL-7eb" customClass="MeFavoritesCollectionViewCell" customModule="BasicStructure" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="171" height="188"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="uuH-oL-rXT">
+                <rect key="frame" x="0.0" y="0.0" width="171" height="188"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="offer1" translatesAutoresizingMaskIntoConstraints="NO" id="QtL-nM-6bJ">
+                        <rect key="frame" x="0.0" y="0.0" width="171" height="154.5"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wde-j8-xQO">
+                        <rect key="frame" x="0.0" y="142" width="171" height="46"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Yk1-U9-MqK">
+                                <rect key="frame" x="0.0" y="4" width="147" height="38"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="product Name" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="0HZ-FY-RoW">
+                                        <rect key="frame" x="0.0" y="0.0" width="113" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="8av-Sx-Ncg"/>
+                                            <constraint firstAttribute="width" secondItem="0HZ-FY-RoW" secondAttribute="height" multiplier="190:64" id="YCf-sI-nzv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPn-fQ-diJ">
+                                        <rect key="frame" x="116" y="0.0" width="31" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="bPn-fQ-diJ" secondAttribute="height" multiplier="31:38" id="bLV-re-FgT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <imageReference key="image" image="trash" catalog="system" symbolScale="large"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20"/>
+                                            <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="QtL-nM-6bJ" firstAttribute="top" secondItem="uuH-oL-rXT" secondAttribute="top" id="3N3-aa-hml"/>
+                    <constraint firstAttribute="trailing" secondItem="QtL-nM-6bJ" secondAttribute="trailing" id="BSt-ZN-CSx"/>
+                    <constraint firstAttribute="trailing" secondItem="Wde-j8-xQO" secondAttribute="trailing" id="Krr-cn-25y"/>
+                    <constraint firstItem="Wde-j8-xQO" firstAttribute="centerX" secondItem="uuH-oL-rXT" secondAttribute="centerX" id="cPr-OD-sLD"/>
+                    <constraint firstItem="Wde-j8-xQO" firstAttribute="leading" secondItem="uuH-oL-rXT" secondAttribute="leading" id="jNh-nt-MUA"/>
+                    <constraint firstAttribute="bottom" secondItem="Wde-j8-xQO" secondAttribute="bottom" id="kmv-IX-cs1"/>
+                    <constraint firstItem="QtL-nM-6bJ" firstAttribute="leading" secondItem="uuH-oL-rXT" secondAttribute="leading" id="w1V-LV-IEu"/>
+                    <constraint firstItem="Wde-j8-xQO" firstAttribute="top" secondItem="uuH-oL-rXT" secondAttribute="top" constant="142" id="zZC-wC-f82"/>
+                    <constraint firstAttribute="bottom" secondItem="QtL-nM-6bJ" secondAttribute="bottom" constant="33.5" id="zyo-M3-PMk"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="171" height="188"/>
+            <connections>
+                <outlet property="meFavoriteImage" destination="QtL-nM-6bJ" id="LBY-6R-oEj"/>
+                <outlet property="meFavoriteName" destination="0HZ-FY-RoW" id="5uP-AY-wdl"/>
+            </connections>
+            <point key="canvasLocation" x="-317" y="64"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="offer1" width="3951" height="2963"/>
+        <image name="trash" catalog="system" width="121" height="128"/>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
